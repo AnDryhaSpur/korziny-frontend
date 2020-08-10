@@ -59,7 +59,7 @@ h2 {
   min-height: 5vh; }
 
 .mainMenu__logo {
-  height: 2.5rem;
+  height: 2rem;
   object-fit: contain; }
 
 .mainMenu__elements {
@@ -79,16 +79,20 @@ h2 {
   font-size: 1rem;
   font-family: 'Exo2-Regular';
   color: #242424; }
+  .mainMenu__link-style:hover {
+    color: #40A629; }
 
 .mainMenu__search {
   padding: 0 2rem;
-  margin-right: 2.2%; }
+  margin-right: 1.05%; }
 
 .mainMenu__search-style {
   text-decoration: none;
   color: #242424;
   font-size: 1.1rem;
   position: relative; }
+  .mainMenu__search-style:hover {
+    color: #40A629; }
 
 .mainMenu__right {
   text-align: right;
@@ -104,14 +108,13 @@ h2 {
   text-decoration: none;
   font-family: 'Exo2-SemiBold';
   color: #242424; }
-
-.mainMenu__mailIcon-style {
-  color: #000; }
+  .mainMenu__mail-style:hover {
+    color: #40A629; }
 
 .subMenu {
   z-index: 90;
   display: flex;
-  padding: 0.3rem 5% 0.2rem;
+  padding: 0.2rem 5%;
   justify-content: space-between;
   align-items: center;
   flex-grow: 0;
@@ -133,12 +136,69 @@ h2 {
   margin: 0; }
 
 .subMenu__element-style {
-  list-style: none; }
+  flex-grow: 1;
+  list-style: none;
+  text-align: center; }
+  .subMenu__element-style:hover .subMenu__link-style {
+    color: #40A629;
+    box-shadow: 0 2px 0 rgba(64, 166, 41, 0.8); }
+  .subMenu__element-style:hover .subMenu__item {
+    height: 16rem;
+    opacity: 100%; }
+
+.subMenu__item {
+  position: absolute;
+  top: 90%;
+  height: 0;
+  overflow: hidden;
+  left: 5%;
+  right: 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+
+.subMenu__item-style {
+  background-color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 0.15rem 0.15rem rgba(36, 36, 36, 0.3);
+  border-radius: 0 0 3px 3px;
+  opacity: 0; }
+  .subMenu__item-style:hover {
+    height: 16rem;
+    opacity: 100%; }
+
+.subMenu__itemImg {
+  height: 10rem;
+  object-fit: scale-down;
+  align-self: end;
+  justify-self: center;
+  transition: all 0.3s ease; }
+
+.subMenu__itemLink {
+  display: grid;
+  text-decoration: none;
+  color: #242424;
+  transition: all 0.3s ease; }
+  .subMenu__itemLink b {
+    font-size: 0.9rem;
+    align-self: center; }
+  .subMenu__itemLink:hover {
+    color: #40A629; }
+    .subMenu__itemLink:hover .subMenu__itemImg {
+      transform: scale(1.05); }
 
 .subMenu__link-style {
+  transition: all 0.3s ease;
   text-decoration: none;
   font-size: 1rem;
   color: #242424; }
+
+.btn {
+  transition: all 0.3s ease; }
+  .btn:hover {
+    opacity: 0.8;
+    cursor: pointer; }
+  .btn:active {
+    transform: scale(0.95); }
 
 .btnCall-style {
   font-family: 'Exo2-Light';
@@ -152,24 +212,61 @@ h2 {
   outline: none; }
 
 .subMenu__tel {
-  padding-left: 2rem; }
+  padding-left: 2rem;
+  position: relative; }
 
 .subMenu__tel-style {
   white-space: nowrap;
   font-size: 1.1rem;
   text-decoration: none;
   font-family: 'Exo2-SemiBold';
-  color: #242424; }
+  color: #242424;
+  transition: all 0.3s ease; }
+  .subMenu__tel-style:hover {
+    color: #40A629; }
 
-.subMenu__telIcon-style {
-  color: #000; }
+.subMenu__workhours {
+  position: absolute;
+  background-color: #fff;
+  width: 14rem;
+  top: 80%;
+  right: 5%;
+  box-shadow: 0 0.15rem 0.15rem rgba(36, 36, 36, 0.3);
+  border-radius: 0 0 3px 3px;
+  grid-gap: 0.3rem;
+  display: grid;
+  opacity: 0;
+  transition: all 0.3s ease;
+  height: 0;
+  overflow: hidden; }
+
+.subMenu__workhoursString-style {
+  font-size: 1.1rem;
+  align-self: end; }
+
+.subMenu__workhoursString-style2 {
+  font-size: 0.9rem;
+  align-self: start;
+  color: #717171; }
+  .subMenu__workhoursString-style2 b {
+    color: #000; }
+
+.subMenu__tel:hover + .subMenu__workhours {
+  opacity: 100%;
+  height: auto;
+  padding: 1.5rem 2rem; }
+
+.subMenu__workhours:hover {
+  opacity: 100%;
+  height: auto;
+  padding: 1.5rem 2rem; }
 
 .firstScreen {
   display: grid;
   text-align: center;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
-  min-height: 85vh;
+  min-height: 88vh;
   align-items: end; }
 
 .firstScreen-style {
@@ -498,7 +595,10 @@ h2 {
 .footer__productLink-style {
   text-decoration: none;
   color: #000;
-  font-family: 'Exo2-SemiBold'; }
+  font-family: 'Exo2-SemiBold';
+  transition: all 0.3s ease; }
+  .footer__productLink-style:hover {
+    color: #40A629; }
 
 .footer__copyright {
   font-size: 0.7rem; }
@@ -548,7 +648,11 @@ h2 {
   text-decoration: none;
   font-size: 1rem;
   color: #242424;
-  font-family: 'Exo2-SemiBold'; }
+  font-family: 'Exo2-SemiBold';
+  transition: all 0.3s ease; }
+  .footer__menuLink-style:hover {
+    color: #40A629;
+    box-shadow: 0 2px 0 rgba(64, 166, 41, 0.8); }
 
 .footer__segment3 {
   padding-left: 3rem;
@@ -596,7 +700,10 @@ h2 {
 .footer__social-style {
   text-decoration: none;
   color: #000;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  transition: all 0.3s ease; }
+  .footer__social-style:hover {
+    color: #40A629; }
 
 .footer__legal {
   font-size: 0.7rem; }
@@ -618,4 +725,7 @@ h2 {
   text-decoration: none;
   color: #242424;
   text-align: center;
-  align-self: end; }
+  align-self: end;
+  transition: all 0.3s ease; }
+  .footer__legal-style:hover {
+    color: #40A629; }
