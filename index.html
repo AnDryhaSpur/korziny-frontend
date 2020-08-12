@@ -22,15 +22,27 @@
                         href="">Документация</a></li>
                 <li class="mainMenu__element mainMenu__element-style"><a class="mainMenu__link mainMenu__link-style"
                         href="">Новости</a></li>
-                <li class="mainMenu__element mainMenu__element-style"><a class="mainMenu__link mainMenu__link-style"
-                        href="">Блог</a></li>
+                <li class="mainMenu__element mainMenu__element-style mainMenu__element-more"><a class="mainMenu__link mainMenu__link-style"
+                        href="">Еще</a></li>
+                <ul class="mainMenu__moreList mainMenu__moreList-style">
+                    <li class="mainMenu__element mainMenu__element-style"><a class="mainMenu__link mainMenu__link-style"
+                        href="">Новости</a></li>
+                    <li class="mainMenu__element mainMenu__element-style"><a class="mainMenu__link mainMenu__link-style"
+                        href="">Новости</a></li>
+                    <li class="mainMenu__element mainMenu__element-style"><a class="mainMenu__link mainMenu__link-style"
+                        href="">Новости</a></li>
+                    <li class="mainMenu__element mainMenu__element-style"><a class="mainMenu__link mainMenu__link-style"
+                        href="">Новости</a></li>
+                    <li class="mainMenu__element mainMenu__element-style"><a class="mainMenu__link mainMenu__link-style"
+                        href="">Новости</a></li>
+                </ul>
+                <i class="mainMenu__moreArrow fas fa-angle-down"></i>
             </ul>
             <a href="" class="mainMenu__search mainMenu__search-style">
                 <i class="fas fa-search mainMenu__searchIcon mainMenu__searchIcon-style"></i>
             </a>
             <div class="mainMenu__right mainMenu__right-style">
-                <a class="mainMenu__mail mainMenu__mail-style" href=""><i
-                        class="far fa-envelope mainMenu__mailIcon mainMenu__mailIcon-style"></i> info@alteka.su</a>
+                <a class="mainMenu__mail mainMenu__mail-style" href=""><i class="far fa-envelope mainMenu__mailIcon mainMenu__mailIcon-style"></i> info@alteka.su</a>
             </div>
         </nav>
     </header>
@@ -91,7 +103,8 @@
                 </div>
             </li>
         </ul>
-        <button class="btn btnCall-style subMenu__btnCall">Заказать звонок</button>
+        <button class="btn-black btnCall-style subMenu__btnCall"><i class="fas fa-mobile-alt"></i><div class="btnCall__desc">Заказать звонок</div></button>
+        <button class="btn-black btnCall-style subMenu__btnCall"><i class="fab fa-whatsapp"></i><div class="btnCall__desc">Написать в WhatsApp</div></button>
         <a href="" class="subMenu__tel subMenu__tel-style">8(800)700-93-77</a>
         <div class="subMenu__workhours subMenu__workhours-style">
             <span class="subMenu__workhoursString subMenu__workhoursString-style">Консультация и продажа:</span>
@@ -107,18 +120,42 @@
     <section class="firstScreen firstScreen-style">
         <h1 class="firstScreen__title firstScreen__title-style">Изготовление и монтаж<br><b>корзин для кондиционеров</b>
         </h1>
-        <p class="firstScreen__text firstScreen__text-style">Назначение корзин для кондиционеров - сохранить красивый
-            дизайн
-            фасада здания, замаскировав наружные блоки климатического оборудования</p>
-        <form action="" class="firstScreen__form firstScreen__form-style">
-            <i class="fas fa-user-circle"></i><input type="text" name="" id=""
-                class="firstScreen__input firstScreen__input-style firstScreen__input-name" placeholder="Имя">
-            <i class="fas fa-phone-square-alt"></i><input type="text" name="" id=""
-                class="firstScreen__input firstScreen__input-style firstScreen__input-tel" placeholder="Телефон">
-            <input type="submit" value="Оставить заявку"
-                class="btn firstScreen__input firstScreen__input-style firstScreen__input-submit">
+        <p class="firstScreen__text firstScreen__text-style">
+            Красивый внешний вид здания значительно повышает его привлекательность для клиентов, но наружные блоки сплит-систем могут испортить дизайн. Назначение корзин для кондиционеров - замаскировать наружные блоки климатического оборудования, тем самым сохранив красивый фасад здания.
+        </p>
+        <a href="" class="btn-yellow firstScreen__button firstScreen__button-style">Оставить заявку</a>
+        <div class="firstScreen__banner firstScreen__banner-style">
+            <img src="img/wall_2.jpg" alt="" class="firstScreen__bannerImage">
+            <span class="firstScreen__bannerTitle firstScreen__bannerTitle-style">+ 1 год</span>
+            <p class="firstScreen__bannerText firstScreen__bannerText-style">
+                Дополнительной гарантии на лакокрасочное покрытие
+            </p>
+        </div>
+    </section>
+
+    <section class="videoBlock videoBlock-style">
+        <video src="video/main.mp4" class="videoBlock__video videoBlock__video-style" autoplay muted loop></video>
+        <h2 class="videoBlock__title videoBlock__title-style">
+            Корзины для кондиционеров - необходимая часть фасада
+        </h2>
+        <ul class="videoBlock__list videoBlock__list-style">
+            <li class="videoBlock__listItem videoBlock__listItem-style">Более 70% современных зданий имеют корзины для кондиционеров</li>
+            <li class="videoBlock__listItem videoBlock__listItem-style">Наличие фасадных корзин на 25% увеличивает привлекательность квартир в новостройках </li>
+            <li class="videoBlock__listItem videoBlock__listItem-style">Корзины не нарушают целостность дизайна жилого комплекса и обеспечивают дополнительную защиту оборудования</li>
+            <li class="videoBlock__listItem videoBlock__listItem-style">Монтаж кондиционеров с корзинами гораздо удобнее из-за продуманной конструкции кронштейнов</li>
+        </ul>
+        <form action="" class="videoBlock__form videoBlock__form-style">
+            <h3 class="videoBlock__formTitle videoBlock__formTitle-style">Узнайте стоимость корзины</h3>
+            <p class="videoBlock__formText videoBlock__formText-style">
+                Оставьте ваши контактные данные и наш менеджер свяжется с вами
+            </p>
+            <label for="input-name" class="videoBlock__label videoBlock__label-style">Ваше имя:</label>
+            <input type="text" name="input-name" id="" class="videoBlock__input videoBlock__input-style videoBlock__input-name" placeholder="Имя">
+            <label for="input-tel" class="videoBlock__label videoBlock__label-style">Ваш телефон:</label>
+            <input type="text" name="input-tel" id="" class="videoBlock__input videoBlock__input-style videoBlock__input-tel" placeholder="Телефон">
+            <p class="videoBlock__formText videoBlock__formText-style2">Нажимая "Оставить заявку" вы даете согласие на обработку ваших <a href="" class="videoBlock__personal">персональных данных</a></p>
+            <input type="submit" value="Оставить заявку" class="btn-black videoBlock__input videoBlock__input-style videoBlock__input-submit">
         </form>
-        <video src="video/main.mp4" class="firstScreen__video firstScreen__video-style" autoplay muted loop></video>
     </section>
 
     <section class="aboutCompany aboutCompany-style">
@@ -157,10 +194,8 @@
                     blanditiis fugit, dolor eius saepe! Voluptas ipsum incidunt quis sit molestiae commodi ex, ad
                     aliquam delectus!
                 </p>
-                <a href="" class="btn products__info products__info-style">Подробнее</a>
+                <a href="" class="btn-black products__info products__info-style">Подробнее</a>
                 <a href="" class="products__objects products__objects-style">Выполненные объекты</a>
-                <img src="img/icons/checkmark.png" alt="" class="products__icon">
-                <p class="products__numbers"><b>12000</b><br>корзин произведено</p>
             </div>
             <div class="products__photos products__photos-style products__photos-right">
                 <div class="products__photo products__photo-left">
@@ -170,72 +205,13 @@
                     <img src="img/2.jpg" alt=""><a href=""></a>
                 </div>
             </div>
-        </div>
-        <div class="products__block">
-            <div class="products__photos products__photos-style products__photos-left">
-                <div class="products__photo products__photo-left">
-                    <img src="img/1.jpg" alt=""><a href=""></a>
-                </div>
-                <div class="products__photo products__photo-right">
-                    <img src="img/2.jpg" alt=""><a href=""></a>
-                </div>
-            </div>
-            <div class="products__description products__description-style products__description-right">
-                <h3 class="products__descriptionTitle products__descriptionTitle-style">Корзина для стандартного фасада
-                </h3>
-                <p class="products__descriptionText products__descriptionText-style">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum praesentium facilis sint illum atque
-                    nam consequuntur rem nobis perferendis, nihil maiores nostrum? Ad voluptatem minima tenetur
-                    recusandae, distinctio quae. Reprehenderit?
-                </p>
-                <a href="" class="btn products__info products__info-style">Подробнее</a>
-                <a href="" class="products__objects products__objects-style">Выполненные объекты</a>
+            <div class="products__icons products__icons-right">
                 <img src="img/icons/checkmark.png" alt="" class="products__icon">
                 <p class="products__numbers"><b>12000</b><br>корзин произведено</p>
-            </div>
-        </div>
-        <div class="products__block">
-            <div class="products__description products__description-style products__description-left">
-                <h3 class="products__descriptionTitle products__descriptionTitle-style">Корзина для стандартного фасада
-                </h3>
-                <p class="products__descriptionText products__descriptionText-style">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam totam nihil ipsam hic reprehenderit
-                    blanditiis fugit, dolor eius saepe! Voluptas ipsum incidunt quis sit molestiae commodi ex, ad
-                    aliquam delectus!
-                </p>
-                <a href="" class="btn products__info products__info-style">Подробнее</a>
-                <a href="" class="products__objects products__objects-style">Выполненные объекты</a>
                 <img src="img/icons/checkmark.png" alt="" class="products__icon">
                 <p class="products__numbers"><b>12000</b><br>корзин произведено</p>
-            </div>
-            <div class="products__photos products__photos-style products__photos-right">
-                <div class="products__photo products__photo-left">
-                    <img src="img/1.jpg" alt=""><a href=""></a>
-                </div>
-                <div class="products__photo products__photo-right">
-                    <img src="img/2.jpg" alt=""><a href=""></a>
-                </div>
-            </div>
-        </div>
-        <div class="products__block">
-            <div class="products__photos products__photos-style products__photos-left">
-                <div class="products__photo products__photo-left">
-                    <img src="img/1.jpg" alt=""><a href=""></a>
-                </div>
-                <div class="products__photo products__photo-right">
-                    <img src="img/2.jpg" alt=""><a href=""></a>
-                </div>
-            </div>
-            <div class="products__description products__description-style products__description-right">
-                <h3 class="products__descriptionTitle products__descriptionTitle-style">Корзина для стандартного фасада
-                </h3>
-                <p class="products__descriptionText products__descriptionText-style">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum praesentium facilis sint illum atque
-                    nam consequuntur rem nobis perferendis, nihil maiores nostrum? Ad voluptatem minima tenetur
-                    recusandae, distinctio quae. Reprehenderit?
-                </p>
-                <a href="" class="btn products__info products__info-style">Подробнее</a>
-                <a href="" class="products__objects products__objects-style">Выполненные объекты</a>
+                <img src="img/icons/checkmark.png" alt="" class="products__icon">
+                <p class="products__numbers"><b>12000</b><br>корзин произведено</p>
                 <img src="img/icons/checkmark.png" alt="" class="products__icon">
                 <p class="products__numbers"><b>12000</b><br>корзин произведено</p>
             </div>
@@ -303,7 +279,7 @@
             <span class="footer__contact footer__contact-style">Телефон: <b>8-800-600-64-40</b></span>
             <span class="footer__contact footer__contact-style">Электронная почта: <b>info@alteka.su</b></span>
             <span class="footer__contact footer__contact-style">Часы работы: <b>8:00 - 17:00 </b></span>
-            <button class="btn btnCall-style footer__btnCall footer__btnCall-style">Заказать звонок</button>
+            <button class="btn-black btnCall-style footer__btnCall footer__btnCall-style">Заказать звонок</button>
             <div class="footer__socials">
                 <a href="" class="footer__social footer__social-style"><i class="fab fa-vk"></i></a>
                 <a href="" class="footer__social footer__social-style"><i class="fab fa-youtube"></i></a>
