@@ -135,7 +135,7 @@
     </section>
 
     <section class="videoBlock videoBlock-style">
-        <video src="video/vbg.mp4" class="videoBlock__video videoBlock__video-style" autoplay muted loop></video>
+        <video src="video/background.mp4" class="videoBlock__video videoBlock__video-style" autoplay muted loop></video>
         <h2 class="videoBlock__title videoBlock__title-style">
             Корзины для кондиционеров - необходимая часть фасада
         </h2>
@@ -186,10 +186,21 @@
 
     <section class="products products-style">
         <h2 class="products__title products__title-style">Продукция</h2>
-        <div class="products__block">
+
+        <input type="radio" value="nav_1" id="nav_1" name="products__nav" class="products__nav products__nav-style" checked>
+        <label for="nav_1" class="products__navBtn products__navBtn-style">Стандартный фасад</label>
+        <input type="radio" value="nav_2" id="nav_2" name="products__nav" class="products__nav products__nav-style">
+        <label for="nav_2" class="products__navBtn products__navBtn-style">Мокрый фасад</label>
+        <input type="radio" value="nav_3" id="nav_3" name="products__nav" class="products__nav products__nav-style">
+        <label for="nav_3" class="products__navBtn products__navBtn-style">Вентилируемый фасад</label>
+        <input type="radio" value="nav_4" id="nav_4" name="products__nav" class="products__nav products__nav-style">
+        <label for="nav_4" class="products__navBtn products__navBtn-style">Экран</label>
+        <input type="radio" value="nav_5" id="nav_5" name="products__nav" class="products__nav products__nav-style">
+        <label for="nav_5" class="products__navBtn products__navBtn-style">Панель</label>
+
+        <div class="products__block" id="block_1">
             <div class="products__description products__description-style products__description-left">
-                <h3 class="products__descriptionTitle products__descriptionTitle-style">Корзина для стандартного фасада
-                </h3>
+                <h3 class="products__descriptionTitle products__descriptionTitle-style">Корзина для стандартного фасада</h3>
                 <p class="products__descriptionText products__descriptionText-style">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam totam nihil ipsam hic reprehenderit
                     blanditiis fugit, dolor eius saepe! Voluptas ipsum incidunt quis sit molestiae commodi ex, ad
@@ -216,28 +227,191 @@
                     </div>
                 </div>
             </div>
-            <div class="products__icons">
-                <img src="img/icons/checkmark.png" alt="" class="products__icon">
-                <p class="products__numbers"><b>12000</b><br>корзин произведено</p>
-                <img src="img/icons/checkmark.png" alt="" class="products__icon">
-                <p class="products__numbers"><b>12000</b><br>корзин произведено</p>
-                <img src="img/icons/checkmark.png" alt="" class="products__icon">
-                <p class="products__numbers"><b>12000</b><br>корзин произведено</p>
-                <img src="img/icons/checkmark.png" alt="" class="products__icon">
-                <p class="products__numbers"><b>12000</b><br>корзин произведено</p>
+        </div>
+        <div class="products__block" id="block_2">
+            <div class="products__description products__description-style products__description-left">
+                <h3 class="products__descriptionTitle products__descriptionTitle-style">Корзина для мокрого фасада</h3>
+                <p class="products__descriptionText products__descriptionText-style">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam totam nihil ipsam hic reprehenderit
+                    blanditiis fugit, dolor eius saepe! Voluptas ipsum incidunt quis sit molestiae commodi ex, ad
+                    aliquam delectus!
+                </p>
+                <a href="" class="btn-black products__order products__order-style">Заказать</a>
+                <a href="" class="products__info products__info-style">Подробнее</a>
             </div>
+            <div class="products__photos products__photos-style">
+                <div class="products__photosColumn">
+                    <div class="products__photo products__photo-left">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="products__photo products__photo-right">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="products__photosColumn">
+                    <div class="products__photo products__photo-left">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                    <div class="products__photo products__photo-right">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="products__block" id="block_3">
+            <div class="products__description products__description-style products__description-left">
+                <h3 class="products__descriptionTitle products__descriptionTitle-style">Корзина для вентилируемого фасада</h3>
+                <p class="products__descriptionText products__descriptionText-style">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam totam nihil ipsam hic reprehenderit
+                    blanditiis fugit, dolor eius saepe! Voluptas ipsum incidunt quis sit molestiae commodi ex, ad
+                    aliquam delectus!
+                </p>
+                <a href="" class="btn-black products__order products__order-style">Заказать</a>
+                <a href="" class="products__info products__info-style">Подробнее</a>
+            </div>
+            <div class="products__photos products__photos-style">
+                <div class="products__photosColumn">
+                    <div class="products__photo products__photo-left">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="products__photo products__photo-right">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="products__photosColumn">
+                    <div class="products__photo products__photo-left">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                    <div class="products__photo products__photo-right">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="products__block" id="block_4">
+            <div class="products__description products__description-style products__description-left">
+                <h3 class="products__descriptionTitle products__descriptionTitle-style">Экран для кондиционера</h3>
+                <p class="products__descriptionText products__descriptionText-style">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam totam nihil ipsam hic reprehenderit
+                    blanditiis fugit, dolor eius saepe! Voluptas ipsum incidunt quis sit molestiae commodi ex, ad
+                    aliquam delectus!
+                </p>
+                <a href="" class="btn-black products__order products__order-style">Заказать</a>
+                <a href="" class="products__info products__info-style">Подробнее</a>
+            </div>
+            <div class="products__photos products__photos-style">
+                <div class="products__photosColumn">
+                    <div class="products__photo products__photo-left">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="products__photo products__photo-right">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="products__photosColumn">
+                    <div class="products__photo products__photo-left">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                    <div class="products__photo products__photo-right">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="products__block" id="block_5">
+            <div class="products__description products__description-style products__description-left">
+                <h3 class="products__descriptionTitle products__descriptionTitle-style">Декоративная панель</h3>
+                <p class="products__descriptionText products__descriptionText-style">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam totam nihil ipsam hic reprehenderit
+                    blanditiis fugit, dolor eius saepe! Voluptas ipsum incidunt quis sit molestiae commodi ex, ad
+                    aliquam delectus!
+                </p>
+                <a href="" class="btn-black products__order products__order-style">Заказать</a>
+                <a href="" class="products__info products__info-style">Подробнее</a>
+            </div>
+            <div class="products__photos products__photos-style">
+                <div class="products__photosColumn">
+                    <div class="products__photo products__photo-left">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="products__photo products__photo-right">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="products__photosColumn">
+                    <div class="products__photo products__photo-left">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                    <div class="products__photo products__photo-right">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="products__icons">
+            <img src="img/icons/checkmark.png" alt="" class="products__icon">
+            <p class="products__numbers"><b>Надежность</b><br>корзин произведено</p>
+
+            <img src="img/icons/checkmark.png" alt="" class="products__icon">
+            <p class="products__numbers"><b>Легкий монтаж</b><br>корзин произведено</p>
+
+            <img src="img/icons/checkmark.png" alt="" class="products__icon">
+            <p class="products__numbers"><b>12000</b><br>корзин произведено</p>
+
+            <img src="img/icons/checkmark.png" alt="" class="products__icon">
+            <p class="products__numbers"><b>12000</b><br>корзин произведено</p>
         </div>
     </section>
 
-    <div class="lorem">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, facere asperiores. Enim quo vitae sint.
-        Reprehenderit vero ratione neque asperiores tempora deleniti, molestiae tempore quod, eveniet, impedit quis
-        dolor porro ullam labore consequuntur illo est eaque officia velit unde quasi laboriosam. Libero vero repellat
-        voluptate delectus doloribus recusandae fuga unde, a suscipit, iusto sed? Iste nisi cupiditate ullam, ab nemo
-        sunt perspiciatis quasi enim quod accusamus vitae quaerat ipsum sit atque odit ea nesciunt esse nobis temporibus
-        numquam impedit ut error est blanditiis. Itaque corrupti voluptatem, provident eligendi tempore expedita quo
-        minus? Fugiat quos sapiente, nisi architecto ipsa assumenda voluptatum.
-    </div class="lorem">
+    <section class="features features-style">
+        <h2 class="features__title features__title-style">Преимущества</h2>
+        <div class="features__cards features__cards-style">
+            <div class="features__card features__card-style">
+                <img src="img/icons/metal.png" alt="" class="features__icon features__icon-style">
+                <h3 class="features__cardTitle features__cardTitle-style">Оцинкованная сталь</h3>
+                <p class="features__cardText features__cardText-style">
+                    Оцинкованная сталь повышает устойчивость металла к воздействию агрессивных сред, к процессам ржавления.
+                </p>
+            </div>
+            <div class="features__card features__card-style">
+                <img src="img/icons/paint.png" alt="" class="features__icon features__icon-style">
+                <h3 class="features__cardTitle features__cardTitle-style">Порошковая покраска</h3>
+                <p class="features__cardText features__cardText-style">
+                    Порошковая окраска более прочная, износостойкая и при этом не оказывает вредного воздействия на экологию.
+                </p>
+            </div>
+            <img src="img/razrez_itog.png" alt="" class="features__image features__image-style">
+            <div class="features__card features__card-style">
+                <img src="img/icons/bolt.png" alt="" class="features__icon features__icon-style">
+                <h3 class="features__cardTitle features__cardTitle-style">Отсутствие сварки</h3>
+                <p class="features__cardText features__cardText-style">
+                    При сварке соединения более подвержены скорой коррозии, поэтому в изделиях используются болтовые соединения.
+                </p>
+            </div>
+            <div class="features__card features__card-style">
+                <img src="img/icons/pieces.png" alt="" class="features__icon features__icon-style">
+                <h3 class="features__cardTitle features__cardTitle-style">Сборная конструкция</h3>
+                <p class="features__cardText features__cardText-style">
+                    Сборно-разборная конструкция позволяет экономично складировать и транспортировать изделия.
+                </p>
+            </div>
+            <div class="features__card features__card-style">
+                <img src="img/icons/bolt.png" alt="" class="features__icon features__icon-style">
+                <h3 class="features__cardTitle features__cardTitle-style">Отсутствие сварки</h3>
+                <p class="features__cardText features__cardText-style">
+                    При сварке соединения более подвержены скорой коррозии, поэтому в изделиях используются болтовые соединения.
+                </p>
+            </div>
+            <div class="features__card features__card-style">
+                <img src="img/icons/pieces.png" alt="" class="features__icon features__icon-style">
+                <h3 class="features__cardTitle features__cardTitle-style">Сборная конструкция</h3>
+                <p class="features__cardText features__cardText-style">
+                    Сборно-разборная конструкция позволяет экономично складировать и транспортировать изделия.
+                </p>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer footer-style">
         <div class="footer__segment1 footer__segment1-style">
