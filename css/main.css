@@ -362,17 +362,16 @@ section {
   position: relative;
   grid-template-columns: auto repeat(3, 1fr);
   grid-template-rows: 1fr auto;
-  grid-column-gap: 1rem;
   padding: 0 5%;
   height: 10vh; }
   .mobileMenu__logoLink {
-    align-self: center;
-    padding: 1rem 1rem 1rem 0; }
-  .mobileMenu__btnCall {
-    height: 80%;
     align-self: center; }
   .mobileMenu__logo {
     height: 2rem; }
+  .mobileMenu__btnCall {
+    height: 80%;
+    align-self: center;
+    justify-self: end; }
   .mobileMenu__toggle {
     display: none; }
   .mobileMenu__button {
@@ -1784,6 +1783,8 @@ section {
       grid-template-columns: 1fr;
       grid-template-rows: auto auto;
       grid-gap: 0.2rem; }
+    .products__descriptionTitle {
+      font-size: 1.2rem; }
     .products__icons {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(4, 1fr); }
@@ -1824,7 +1825,8 @@ section {
       grid-column: 1/-1;
       grid-row: 4; }
     .construction__blockTitle {
-      grid-row: 1; }
+      grid-row: 1;
+      font-size: 1.2rem; }
     .construction__text {
       grid-row: 2;
       text-align: justify; }
@@ -1851,6 +1853,8 @@ section {
     .manufacture__block {
       grid-template-columns: 1fr;
       grid-gap: 0.2rem; }
+    .manufacture__descriptionTitle {
+      font-size: 1.2rem; }
     .manufacture__order {
       justify-self: center; }
     .manufacture__navBtn {
