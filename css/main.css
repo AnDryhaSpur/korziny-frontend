@@ -368,6 +368,9 @@ section {
   .mobileMenu__logoLink {
     align-self: center;
     padding: 1rem 1rem 1rem 0; }
+  .mobileMenu__btnCall {
+    height: 80%;
+    align-self: center; }
   .mobileMenu__logo {
     height: 2rem; }
   .mobileMenu__toggle {
@@ -406,18 +409,17 @@ section {
     justify-content: space-between;
     position: absolute;
     background-color: #fff;
-    width: 101%;
-    margin-left: -5.5%;
-    height: auto;
+    height: 0;
+    width: 100%;
+    left: -5.5%;
     top: 99%;
     opacity: 0;
-    padding: 0 5%;
-    height: 0;
+    padding: 0 5.5%;
     overflow: hidden;
     grid-column: 1/-1;
     transition: all 0.3s ease; }
   .mobileMenu__toggle:checked ~ .mobileMenu__opening {
-    height: 87vh;
+    height: 90vh;
     padding-bottom: 3vh;
     opacity: 1; }
   .mobileMenu__workhours {
@@ -819,7 +821,7 @@ section {
     content: '\f1c1';
     padding: 0.2rem 0.4rem;
     position: absolute;
-    bottom: 18%;
+    top: 2%;
     right: 2%;
     background-color: #EEEEEE;
     border-radius: 3px 0 0 0;
@@ -1168,7 +1170,7 @@ section {
     content: '\f1c5';
     padding: 0.2rem 0.4rem;
     position: absolute;
-    bottom: -0.1rem;
+    top: -0.1rem;
     right: -0.2rem;
     background-color: #EEEEEE;
     border-radius: 3px 0 0 0;
@@ -1717,6 +1719,7 @@ section {
     box-shadow: 0 0.05rem 0.1rem rgba(36, 36, 36, 0.1); }
   .firstScreen {
     grid-template-rows: auto auto auto 1fr;
+    grid-gap: 0.5rem;
     text-align: center;
     min-height: 92vh;
     padding-left: 5%;
