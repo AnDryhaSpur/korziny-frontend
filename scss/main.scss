@@ -1161,11 +1161,10 @@ section {
 }
 
 .products__photos {
-    // display: grid;
+    display: grid;
     border: 1px solid $grey;
     border-radius: 3px;
-    height: 80vh;
-    max-height: 40rem;
+    height: 40rem;
 }
 
 .products__photoPicture {
@@ -1176,13 +1175,11 @@ section {
 
 .products__photoBig {
     grid-row: 1;
-    height: 85%;
     width: 100%;
 }
 
 .products__photoThumbs {
     grid-row: 2;
-    height:  15%;
     width: 100%;
     .swiper-slide-thumb-active {
         position: relative;
