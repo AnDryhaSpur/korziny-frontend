@@ -1611,18 +1611,9 @@ section {
     position: relative;
     height: clamp(30rem, 80vh, 50rem);
     width: 100%;
+    max-width: 60vw;
     overflow: hidden;
     border: 1px solid $grey;
-}
-
-.manufacture__photosColumn {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    transition: all 0.5s ease-in-out;
-    &:hover {
-        width: 500%;
-    }
 }
 
 .manufacture__photo {
@@ -2337,6 +2328,7 @@ section {
         }
         &__photos {
             height: 15rem;
+            max-width: 90vw;
         }
     }
 
