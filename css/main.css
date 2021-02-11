@@ -944,10 +944,12 @@ section {
     font-size: 1.1rem; }
 
 .products__photos {
+  display: grid;
   border: 1px solid #EEEEEE;
   border-radius: 3px;
   width: 100%;
-  height: 40rem; }
+  height: 80vh;
+  max-height: 40rem; }
 
 .products__photoPicture {
   object-fit: cover;
@@ -955,9 +957,13 @@ section {
   width: 100%; }
 
 .products__photoBig {
+  grid-row: 1;
+  height: 85%;
   width: 100%; }
 
 .products__photoThumbs {
+  grid-row: 2;
+  height: 15%;
   width: 100%; }
   .products__photoThumbs .swiper-slide-thumb-active {
     position: relative; }
