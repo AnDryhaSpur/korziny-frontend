@@ -1161,11 +1161,12 @@ section {
 }
 
 .products__photos {
-    display: grid;
+    // display: grid;
     border: 1px solid $grey;
     border-radius: 3px;
     width: 100%;
-    height: 80vh;
+    max-width: 60rem;
+    height: 100%;
     max-height: 40rem;
 }
 
@@ -1177,13 +1178,13 @@ section {
 
 .products__photoBig {
     grid-row: 1;
-    height: 85%;
+    height: 80%;
     width: 100%;
 }
 
 .products__photoThumbs {
     grid-row: 2;
-    height:  15%;
+    height:  20%;
     width: 100%;
     .swiper-slide-thumb-active {
         position: relative;
@@ -1617,11 +1618,6 @@ section {
     border: 1px solid $grey;
 }
 
-.swiper-container.manu-container {
-    height: 100%;
-    max-height: 40rem;
-}
-
 .manufacture__photosColumn {
     display: flex;
     flex-direction: column;
@@ -1667,8 +1663,6 @@ section {
 }
 
 .swiper-container {
-    width: 100%;
-    height: 100%;
     margin-left: auto;
     margin-right: auto;
 }
