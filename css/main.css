@@ -944,7 +944,6 @@ section {
     font-size: 1.1rem; }
 
 .products__photos {
-  display: grid;
   border: 1px solid #EEEEEE;
   border-radius: 3px;
   height: 80vh;
